@@ -1,5 +1,5 @@
 /* reset de CSS */
-*{
+* {
 
     margin: 0;
     padding: 0;
@@ -14,16 +14,50 @@ selector {
 propiedad: valor
 }
 */
+.navbar-toggler {
+    color: beige;
+}
 
- body {
+.logosport {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-    background-color: rgb(0, 14, 26);
-
- }
-
-.imagenlogo {
+.slogan {
+    color: rgb(248, 17, 0);
     text-align: center;
 }
+
+.productoindex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+.contenedor {
+    width: 20rem;
+    margin: 0 auto;
+    background-color: rgb(223, 231, 255);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.btnComprar {
+    background-color: rgb(0, 14, 26);
+    color: aliceblue;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5 rem;
+}
+
+body {
+    background-color: rgb(0, 14, 26);
+}
+
 
 .caja {
     width: 100%;
@@ -31,57 +65,76 @@ propiedad: valor
     background-color: rgb(0, 7, 20);
     text-align: center;
 
- }
+}
 
 .navbar {
     background-color: rgb(0, 7, 20);
 }
 
- .navbar ul{
+.navbar ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
- }
+}
 
- .navbar li {
+.navbar li {
     margin: 0 15px;
- }
+}
 
- .navbar a {
+.navbar a {
     text-decoration: none;
     padding: 15px 20px;
     display: block;
- }
-
-
+}
 
 
 h1 {
-    color: rgb(0, 217, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
-   text-decoration-color: aliceblue;
-   padding: 15px 20px;
+    padding: 15px 20px;
 
 }
 
 .titulocatalogo {
-    color: aliceblue;
+    color:rgb(0, 7, 20);
     text-align: center;
-    font-size: 30px;
-
 }
 
+.subtitulo .h3{
+    color: black;
+}
 
-.productos{
+.catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+.productos {
+    width: 20rem;
+    margin: 0 auto;
+    background-color: rgb(223, 231, 255);
+    padding: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
+}
+
+.titulocontacto {
+    color: aliceblue;
+    width: 20rem;
 }
 
 .contactoparrafo {
-    text-align: center;
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(0, 7, 20);
-    
+    border-radius: 0.5rem;
+    padding: 1rem;
+    white-space: pre-line;
+
 }
 
 
@@ -90,27 +143,24 @@ h1 {
     column-gap: normal;
 }
 
-
-
-
-.tituloacerca {
-    color: rgb(0, 217, 255);
-    text-align: center;
-   text-decoration-color: aliceblue;
-   padding: 15px 20px;
+.contenedoracercade {
+    width: 40rem;
+    
 }
 
-.acercadetext{
-    color: aliceblue;
+.acercadetext {
+    color: rgb(0, 7, 20);
     display: flex;
 }
+
+
 
 .logoacerca {
     text-align: center;
 
 }
 
-.titulos2{
+.titulos2 {
     text-decoration: underline;
     color: rgb(22, 2, 41);
 }
@@ -125,8 +175,9 @@ h1 {
 
 .parrafoindex {
     font-style: italic;
-    color: aliceblue;
+    color: rgb(0, 22, 41);
     font-size: 18px;
+    text-align: center;
 }
 
 
@@ -140,34 +191,13 @@ h2 {
 .fotosindex {
     background-position: center;
     background-size: cover;
-    
-    height: 95vh;
+
+    height: 45rem;
     margin: 200px auto 0;
     overflow: hidden;
 
 }
 
-.fotosindex ul{
-    list-style: none;
-    display: flex;
-
-    animation: movimiento 16s infinite alternate ease-in-out;
-   
-}
-
-@keyframes movimiento {
-    0%{ transform: translateX(0%);}
-    20%{ transform: translateX(0%);}
-
-    25%{ transform: translateX(-100%);}
-    45%{ transform: translateX(-100%);}
-
-    50%{ transform: translateX(-200%);}
-    70%{ transform: translateX(-200%);}
-
-    75%{ transform: translateX(-300%);}
-    95%{ transform: translateX(-300%);}
-}
 
 h4 {
     text-align: center;
@@ -177,22 +207,56 @@ h4 {
 
 .RedesSociales {
     background-color: rgb(0, 7, 20);
+    justify-content: center;
 }
 
- .RedesSociales ul{
+.RedesSociales ul {
     display: flex;
     list-style: none;
     text-align: center;
     padding: 0;
     margin: 0;
- }
+}
 
- .RedesSociales li {
+.RedesSociales li {
     margin: 0 15px;
- }
+}
 
- .RedesSociales a {
+.RedesSociales a {
     text-decoration: none;
     padding: 15px 20px;
     display: block;
- }
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    ul {
+        flex-direction: row;
+    }
+
+    .parrafoindex {
+        color: blue;
+    }
+
+    .contenedoracercade {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .parrafoindex {
+        color: black;
+    }
+
+    .RedesSociales {
+        color: aliceblue;
+    }
+
+    .contenedoracercade {
+        display: flex;
+         justify-content: space-evenly;
+     
+    }
+}
