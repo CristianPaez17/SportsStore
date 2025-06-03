@@ -156,7 +156,9 @@ h1 {
 
 
 .logoacerca {
-    text-align: center;
+    width: 30rem;
+   display: block;
+   margin: 0 auto;
 
 }
 
