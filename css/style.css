@@ -15,7 +15,11 @@ propiedad: valor
 }
 */
 .navbar-toggler {
-    color: beige;
+    color: rgb(249, 255, 254);
+}
+
+main {
+    background-color: aliceblue;
 }
 
 .logosport {
