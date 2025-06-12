@@ -8,45 +8,10 @@
 }
 
 
-/* Selector + propiedad + valor
-
-selector {
-propiedad: valor
-}
-*/
-.navbar-toggler {
-    color: rgb(249, 255, 254);
-}
+/*general*/
 
 main {
     background-color: aliceblue;
-}
-
-.logosport {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.slogan {
-    color: rgb(248, 17, 0);
-    text-align: center;
-}
-
-.productoindex {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 5rem;
-}
-
-.contenedor {
-    width: 20rem;
-    margin: 0 auto;
-    background-color: rgb(223, 231, 255);
-    padding: 1rem;
-    border-radius: 0.5rem;
 }
 
 .btnComprar {
@@ -56,6 +21,21 @@ main {
     border-radius: 0.5rem;
     width: 100%;
     padding: 0.5 rem;
+}
+
+
+.contenedor {
+    width: 20rem;
+    margin: 0 auto;
+    background-color: rgb(223, 231, 255);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px 20px;
 }
 
 body {
@@ -69,6 +49,16 @@ body {
     background-color: rgb(0, 7, 20);
     text-align: center;
 
+}
+
+
+/*header*/
+
+.logosport {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .navbar {
@@ -93,94 +83,17 @@ body {
 }
 
 
-h1 {
-    color: rgb(0, 0, 0);
+/*index*/
+
+
+.slogan {
+    color: rgb(248, 17, 0);
     text-align: center;
-    padding: 15px 20px;
-
-}
-
-.titulocatalogo {
-    color:rgb(0, 7, 20);
-    text-align: center;
-}
-
-.subtitulo .h3{
-    color: black;
-}
-
-.catalogo {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    row-gap: 5rem;
-}
-
-.productos {
-    width: 20rem;
-    margin: 0 auto;
-    background-color: rgb(223, 231, 255);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-}
-
-.titulocontacto {
-    color: aliceblue;
-    width: 20rem;
-}
-
-.contactoparrafo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(0, 7, 20);
-    border-radius: 0.5rem;
-    padding: 1rem;
-    white-space: pre-line;
-
-}
-
-
-.contactoparrafo label {
-    color: aliceblue;
-    column-gap: normal;
-}
-
-.contenedoracercade {
-    width: 40rem;
-    
-}
-
-.acercadetext {
-    color: rgb(0, 7, 20);
-    display: flex;
-}
-
-
-
-.logoacerca {
-    width: 30rem;
-   display: block;
-   margin: 0 auto;
-
-}
-
-.titulos2 {
-    text-decoration: underline;
-    color: rgb(22, 2, 41);
-}
-
-.parrafo-acerca-de {
-    color: coral;
-    font-style: italic;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Comic Relief", system-ui;
 }
 
 .parrafoindex {
     font-style: italic;
+    background-color: rgb(223, 231, 255);
     color: rgb(0, 22, 41);
     font-size: 18px;
     text-align: center;
@@ -201,23 +114,155 @@ h2 {
     height: 45rem;
     margin: 200px auto 0;
     overflow: hidden;
-
 }
 
 
 h4 {
     text-align: center;
-    color: aliceblue;
+    color: rgb(0, 14, 26);
 }
 
+
+/*catalogo*/
+
+.titulocatalogo {
+    color: rgb(0, 7, 20);
+    text-align: center;
+}
+
+.subtitulo .h3 {
+    color: black;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+
+/*contacto*/
+
+.titulocontacto {
+    color: aliceblue;
+    width: 20rem;
+}
+
+.contactoparrafo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(0, 7, 20);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    white-space: pre-line;
+}
+
+.contactoparrafo label {
+    color: aliceblue;
+    column-gap: normal;
+}
+
+li{
+    list-style: none;
+}
+
+.genero{
+    display: flex;
+    flex-direction: row;
+}
+
+.generodentro{
+    margin: 0.5rem;
+}
+
+/*acerca de*/
+
+.contenedoracercade {
+    width: 40rem;
+
+}
+
+.acercadetext {
+    color: rgb(0, 7, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.logoacerca {
+    width: 20rem;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.titulos2 {
+    text-decoration: underline;
+    color: rgb(22, 2, 41);
+}
+
+.parrafo-acerca-de {
+    color: coral;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Comic Relief", system-ui;
+}
+
+.contenedorRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*producto*/
+
+.productoindex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+.productos {
+    width: 20rem;
+    margin: 0 auto;
+    background-color: rgb(223, 231, 255);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.imagenproducto {
+    width: 20rem;
+    height: 30rem;
+}
+
+.logoproducto {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  margin: 0 auto;
+}
+
+.tituloproductos {
+    text-align: center;
+}
+
+/*footer*/
 
 .RedesSociales {
     background-color: rgb(0, 7, 20);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    margin: 0 auto;
+    align-items: center;
+    padding: 1ram;
 }
 
 .RedesSociales ul {
@@ -229,18 +274,23 @@ h4 {
 }
 
 .RedesSociales li {
-    margin: 0 15px;
+    margin: 0.5rem;
 }
 
-.RedesSociales a {
-    color: aliceblue;
-    text-decoration: none;
+.footertext {
+    color: rgb(92, 92, 92);
+    margin: 1rem;
     text-align: center;
 }
 
-.footertext{
-    color: rgb(92, 92, 92);
+.logofooter {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
+
+
 
 @media (min-width: 600px) {
     ul {
@@ -256,6 +306,22 @@ h4 {
         justify-content: space-evenly;
     }
 
+   .logofooter {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 15px;
+    }
+
+    .logoacerca {
+    width: 30rem;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+
+}
+
 }
 
 @media (min-width: 1000px) {
@@ -269,7 +335,23 @@ h4 {
 
     .contenedoracercade {
         display: flex;
-         justify-content: space-evenly;
-     
+        justify-content: space-evenly;
+
     }
+
+    .logofooter {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 15px;
+    }
+
+    .logoacerca {
+    width: 30rem;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+
+}
 }
