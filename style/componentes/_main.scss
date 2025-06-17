@@ -191,6 +191,10 @@ li {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 2rem 0;
+}
+.contenedorRedes a {
+    margin: 0.5rem;
 }
 
 .logoacerca {
@@ -211,7 +215,7 @@ li {
     }
 
     50% {
-        transform: scale(1.2);
+        transform: scale(1.05);
     }
 
     100% {
