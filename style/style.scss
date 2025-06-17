@@ -1,10 +1,10 @@
-@import "./global/global";
-@import "./variables/variables";
+@import "./global/global.scss";
+@import "./variables/variables.scss";
 @import "./utils/mixin1.scss";
-@import "./componentes/header";
-@import "./componentes/main";
-@import "./componentes/footer";
-@import "./media/media600";
-@import "./media/media1000";
+@import "./componentes/header.scss";
+@import "./componentes/main.scss";
+@import "./componentes/footer.scss";
+@import "./media/media600.scss";
+@import "./media/media1000.scss";
 
 
