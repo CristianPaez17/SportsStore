@@ -7,11 +7,83 @@
     box-sizing: border-box;
 }
 
-
 /*general*/
+.navbar{
+    background-color: aliceblue;
+    color: rgb(0, 14, 26);
+}
+
+
+.nav-link {
+ color: aliceblue;
+ margin: 1rem;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+}
+
+.nav-link {
+  width: 150px;
+  height: 40px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.nav-link h2 {
+  color: #0ff;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0,255,255,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.nav-link:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.nav-link:hover {
+  background-color: inherit; /* o el mismo color original */
+  color: inherit;
+ 
+}
 
 main {
-    background-color: aliceblue;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: none;
+    background-size: cover;
+     background-position: center center;  
+
 }
 
 .btnComprar {
@@ -21,7 +93,23 @@ main {
     border-radius: 0.5rem;
     width: 100%;
     padding: 0.5 rem;
+
+       transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
 }
+            
+              
+.btnComprar:hover{
+    transform: scale3d(1.1, 1.1 0.3);
+        -webkit-transform: scale3d(1.1, 1.1, 0.3);
+        -moz-transform: scale3d(1.1, 1.1, 0.3);
+        background-color: rgb(29, 34, 46);
+}
+
+
+
+
 
 
 .contenedor {
@@ -30,23 +118,39 @@ main {
     background-color: rgb(223, 231, 255);
     padding: 0.5rem;
     border-radius: 0.5rem;
+
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+
 }
 
+
+.contenedor:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
+}
+              
+
+
 h1 {
-    color: rgb(0, 0, 0);
+    color:aliceblue;
     text-align: center;
     padding: 15px 20px;
 }
 
 body {
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
 }
 
 
 .caja {
     width: 100%;
-    height: 150px;
+    height: 120px;
     background-color: rgb(0, 7, 20);
+    border-color: rgb(27, 27, 41);
     text-align: center;
 
 }
@@ -59,52 +163,69 @@ body {
     height: 5rem;
     border-radius: 50%;
     object-fit: cover;
+
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.navbar {
-    background-color: rgb(0, 7, 20);
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-}
 
 
 /*index*/
 
-
 .slogan {
     color: rgb(248, 17, 0);
     text-align: center;
+    background-color: aliceblue;
+  animation: parpadear 1s infinite;
 }
+
+@keyframes parpadear {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+
 
 .parrafoindex {
     font-style: italic;
-    background-color: rgb(223, 231, 255);
-    color: rgb(0, 22, 41);
+    color: aliceblue;
     font-size: 18px;
     text-align: center;
 }
+
 
 
 h2 {
     text-align: center;
     margin-top: 50px;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: aliceblue;
 }
 
 .fotosindex {
@@ -185,12 +306,14 @@ li{
 }
 
 .acercadetext {
-    color: rgb(0, 7, 20);
+    color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.redesAcerca {
+    color: aliceblue;
+}
 
 
 .logoacerca {
@@ -198,12 +321,25 @@ li{
     border-radius: 20%;
     display: block;
     margin: 0 auto;
+    
+    animation-name: logoacerca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 
 }
 
+  @keyframes logoacerca {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+       
+
+
+
 .titulos2 {
     text-decoration: underline;
-    color: rgb(22, 2, 41);
+    color: aliceblue;
 }
 
 .parrafo-acerca-de {
@@ -253,6 +389,7 @@ li{
 
 .tituloproductos {
     text-align: center;
+    color: aliceblue;
 }
 
 /*footer*/
@@ -288,6 +425,17 @@ li{
     height: 1.5rem;
     border-radius: 50%;
     object-fit: cover;
+
+     transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+
+
+.logofooter:hover{
+    transform: translatey(-20px);
+        -webkit-transform: translatey(-20px);
+        -moz-transform: translatey(-20px);
 }
 
 
@@ -297,9 +445,7 @@ li{
         flex-direction: row;
     }
 
-    .parrafoindex {
-        color: blue;
-    }
+ 
 
     .contenedoracercade {
         display: flex;
@@ -325,10 +471,7 @@ li{
 }
 
 @media (min-width: 1000px) {
-    .parrafoindex {
-        color: black;
-    }
-
+ 
     .RedesSociales {
         color: aliceblue;
     }
