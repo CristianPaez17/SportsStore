@@ -1,0 +1,231 @@
+/*index*/
+main {
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    color: $color-titulo-principal;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.parrafoindex {
+    font-style: italic;
+    color: $color-texto-primario;
+    font-size: 18px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: $color-texto-primario;
+}
+
+.slogan {
+    color: rgb(248, 17, 0);
+    text-align: center;
+    background-color: $color-texto-primario;
+    animation: parpadear 1s infinite;
+}
+
+@keyframes parpadear {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.contenedor {
+    @include contenedor-caja();
+
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+.contenedor:hover {
+    box-shadow: 0 8px 8px 0 $color-principal, 0 8px 8px 0 $color-principal;
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+}
+
+.fotosindex {
+    background-position: center;
+    background-size: cover;
+
+    height: 45rem;
+    margin: 200px auto 0;
+    overflow: hidden;
+}
+
+h4 {
+    text-align: center;
+    color: $color-principal;
+}
+
+.btnComprar {
+    @include botonescompra();
+
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+
+.btnComprar:hover {
+    transform: scale3d(1, 1.1 0.3);
+    -webkit-transform: scale3d(1, 1.1, 0.3);
+    -moz-transform: scale3d(1, 1.1, 0.3);
+    background-color: $color-secundario;
+}
+
+
+
+/*productos*/
+
+.tituloproductos {
+    text-align: center;
+    color: $color-texto-primario;
+}
+
+.productoindex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+.carousel {
+    @include contenedor-caja();
+}
+
+.imagenproducto {
+    width: 20rem;
+    height: 30rem;
+}
+.logoproducto {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*contacto*/
+
+.titulocontacto {
+    color: $color-texto-primario;
+    width: 20rem;
+}
+
+.contactoparrafo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $color-principal;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    white-space: pre-line;
+}
+
+.contactoparrafo label {
+    color: $color-texto-primario;
+    column-gap: normal;
+}
+
+li {
+    list-style: none;
+}
+
+.genero {
+    display: flex;
+    flex-direction: row;
+}
+
+.generodentro {
+    margin: 0.5rem;
+}
+
+/*catalogo*/
+
+.titulocatalogo {
+    color: $color-principal;
+    text-align: center;
+}
+
+.subtitulo .h3 {
+    color: $color-principal;
+}
+
+.catalogo {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+
+/*acerca de*/
+.titulos2 {
+    text-decoration: underline;
+    color: $color-texto-primario;
+}
+
+.redesAcerca {
+    color: $color-texto-primario;
+}
+
+.contenedorRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoacerca {
+    width: 20rem;
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+
+    animation-name: logoacerca;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes logoacerca {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contenedoracercade {
+    width: 40rem;
+}
+
+.acercadetext {
+    color: $color-texto-primario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

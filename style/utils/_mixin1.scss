@@ -1,0 +1,21 @@
+@mixin contenedor-caja($ancho: 20rem, $padding: 0.5rem, $radio: 0.5rem, $color-fondo-cajas: $color-texto-primario) {
+    width: $ancho;
+    margin: 0 auto;
+    background-color: $color-fondo-cajas;
+    padding: $padding;
+    border-radius: $radio;
+}
+
+@mixin botonescompra(
+  $bg-color: $color-principal,
+  $text-color: $color-texto-primario,
+  $border-radius: 0.5rem,
+  $padding: 0.5rem
+) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius;
+  width: 100%;
+  padding: $padding;
+}
