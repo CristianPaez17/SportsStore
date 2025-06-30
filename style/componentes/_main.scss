@@ -113,6 +113,7 @@ h4 {
     width: 20rem;
     height: 30rem;
 }
+
 .logoproducto {
     width: 5rem;
     height: 5rem;
@@ -193,20 +194,21 @@ li {
     align-items: center;
     margin: 2rem 0;
 }
+
 .contenedorRedes a {
     margin: 0.5rem;
 }
 
-.logoacerca {
+.logoac {
     width: 10rem;
-    border-radius: 20%;
+    border-radius: 30%;
     display: block;
     margin: 20rem;
 }
 
 .contenedoracercade {
     width: 40rem;
-     margin: 2rem;
+    margin: 2rem;
     padding: 2rem;
 }
 
@@ -215,7 +217,8 @@ li {
     padding: 2rem;
     color: $color-texto-primario;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
+ 
 }
